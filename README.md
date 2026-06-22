@@ -7,7 +7,7 @@
 
 <br/><br/>
 
-# 📊 Pipeline de Dados Financeiros — B3
+#  Pipeline de Dados Financeiros — B3
 
 ### Coleta · Tratamento · Análise Visual de Ações Brasileiras
 
@@ -20,7 +20,7 @@
 
 ---
 
-## 🎯 Contexto
+##  Contexto
 
 Esse projeto nasceu de uma pergunta simples: **como seria estruturar um pipeline de dados do zero, do jeito que empresas reais fazem?**
 
@@ -38,7 +38,7 @@ Para responder isso na prática, escolhi trabalhar com dados financeiros da B3 �
 
 ---
 
-## 🏗️ Arquitetura do Pipeline
+##  Arquitetura do Pipeline
 
 ```
 Yahoo Finance (yfinance)
@@ -65,12 +65,12 @@ Yahoo Finance (yfinance)
 
 ---
 
-## 📁 Estrutura de Pastas
+##  Estrutura de Pastas
 
 ```
 projeto_pipeline_b3_estagio/
 │
-├── 📂 data/
+├──  data/
 │   ├── raw/                        # Dados brutos — nunca modificados
 │   │   ├── petr4_dados_brutos.csv
 │   │   ├── vale3_dados_brutos.csv
@@ -81,12 +81,12 @@ projeto_pipeline_b3_estagio/
 │       ├── vale3_dados_tratados.csv
 │       └── itub4_dados_tratados.csv
 │
-├── 📂 notebooks/
+├──  notebooks/
 │   ├── 01_coleta_dados.ipynb       # Etapa 1: ingestão
 │   ├── 02_tratamento_dados.ipynb   # Etapa 2: limpeza e transformação
 │   └── 03_analise_visual.ipynb     # Etapa 3: visualizações e conclusões
 │
-├── 📂 images/                      # Gráficos exportados
+├──  images/                      # Gráficos exportados
 │
 ├── requirements.txt
 └── README.md
@@ -94,7 +94,7 @@ projeto_pipeline_b3_estagio/
 
 ---
 
-## 📈 Análises Realizadas
+##  Análises Realizadas
 
 ### Gráfico 1 — Evolução do Preço de Fechamento
 Série temporal comparando os três ativos ao longo do período. Permite identificar tendências, períodos de alta e correlação entre papéis.
@@ -117,7 +117,7 @@ Histograma com KDE mostrando como se distribuem as oscilações diárias. Quanto
 
 ---
 
-## ⚙️ Como Reproduzir
+##  Como Reproduzir
 
 ```bash
 # 1. Clone o repositório
@@ -136,11 +136,11 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-> ⚠️ Execute os notebooks **na ordem numérica**. O notebook 02 depende dos arquivos gerados pelo 01, e o 03 depende dos gerados pelo 02.
+>  Execute os notebooks **na ordem numérica**. O notebook 02 depende dos arquivos gerados pelo 01, e o 03 depende dos gerados pelo 02.
 
 ---
 
-## 🛠️ Stack Utilizada
+##  Stack Utilizada
 
 | Biblioteca | Versão | Uso no projeto |
 |---|---|---|
@@ -152,7 +152,7 @@ jupyter notebook
 
 ---
 
-## 🧠 Decisões Técnicas
+##  Decisões Técnicas
 
 Algumas escolhas feitas durante o projeto que valem registrar:
 
@@ -167,7 +167,7 @@ Os três ativos têm volumes em magnitudes muito diferentes. Plotar juntos torna
 
 ---
 
-## 📚 O que aprendi com esse projeto
+##  O que aprendi com esse projeto
 
 - Como estruturar um projeto de dados de forma que outra pessoa consiga entender e reproduzir sem dificuldade
 - A importância da separação entre dados brutos e processados — um princípio comum em arquiteturas como Data Lake e Medallion Architecture
@@ -176,7 +176,7 @@ Os três ativos têm volumes em magnitudes muito diferentes. Plotar juntos torna
 
 ---
 
-## 🚀 Próximos Passos
+##  Próximos Passos
 
 - [ ] Adicionar cálculo de retorno acumulado e comparação com o Ibovespa
 - [ ] Calcular métricas de risco: volatilidade anualizada e Sharpe ratio simplificado  
@@ -188,7 +188,7 @@ Os três ativos têm volumes em magnitudes muito diferentes. Plotar juntos torna
 
 <div align="center">
 
-Feito com curiosidade e muita documentação 📖  
+Feito com curiosidade e muita documentação   
 **[LinkedIn](https://www.linkedin.com/in/johann-gabriel-voss-giopato/)** · **[Outros projetos](https://github.com/johannvoss)**
 
 </div>
